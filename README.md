@@ -1,0 +1,1 @@
+# IN4050-Introduksjon-til-kunstig-intelligens-og-maskinl-ring

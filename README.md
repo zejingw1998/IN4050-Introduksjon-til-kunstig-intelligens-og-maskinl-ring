@@ -100,15 +100,4 @@ This repository is primarily intended for educational purposes.
 
 The code reflects my own learning process during the course. Some implementations may be simplified for educational purposes and may be updated or improved throughout the semester.
 
-## Author
 
-**Zejing Wang**
-
-Master's student in Mathematics for Applications  
-University of Oslo (UiO)
-
-## Disclaimer
-
-This repository contains personal course notes and exercise solutions.
-
-If you are currently taking IN4050, please follow the University of Oslo's rules regarding collaboration and academic integrity.

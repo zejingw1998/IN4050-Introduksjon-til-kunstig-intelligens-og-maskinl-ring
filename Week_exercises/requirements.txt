@@ -1,0 +1,6 @@
+numpy>=1.26
+matplotlib>=3.8
+jupyterlab>=4.0
+notebook>=7.0
+ipykernel>=6.0
+scikit-learn>=1.4

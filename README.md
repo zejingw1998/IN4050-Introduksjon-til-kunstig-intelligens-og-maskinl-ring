@@ -13,10 +13,13 @@ This repository contains my exercises, notes, and code for **IN4050 – Introduc
 
 ## Repository Structure
 
-The repository is organized mainly by weekly exercises.
-- `Oblig/` Mandatory assignment, project
+The repository is organized into fundamental algorithms, weekly exercises, and mandatory assignments.
+
+- `Fundamental_algorithms/` – Implementations of fundamental AI and machine learning algorithms
 - `Week_exercises/` – Weekly exercises, notebooks, code, and notes
-- `README.md` – Repository description
+- `Oblig1/` – Mandatory assignment 1
+- `Oblig2/` – Mandatory assignment 2
+- `README.md` – Repository overview and course documentation
 
 ## Topics Covered
 

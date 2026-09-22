@@ -1,106 +1,65 @@
-
 # IN4050 – Introduction to Artificial Intelligence and Machine Learning
 
-This repository contains my exercises, notes, and code for **IN4050 – Introduction to Artificial Intelligence and Machine Learning** at the University of Oslo (UiO).
-
-## Course Information
-
-- **Course code:** IN4050
-- **Course name:** Introduction to Artificial Intelligence and Machine Learning
-- **University:** University of Oslo (UiO)
-- **Semester:** Autumn 2026
-- **Field:** Artificial Intelligence and Machine Learning
+This repository contains exercises, implementations, and mandatory assignments from **IN4050 – Introduction to Artificial Intelligence and Machine Learning** at the University of Oslo (UiO), Autumn 2026.
 
 ## Repository Structure
 
-The repository is organized into fundamental algorithms, weekly exercises, and mandatory assignments.
+* `Fundamental_algorithms/` – Implementations of basic algorithms covered in the course
+* `Week_exercises/` – Weekly exercises, notebooks, and small experiments
+* `Oblig1/` – Mandatory assignment 1
+* `Oblig2/` – Mandatory assignment 2
 
-- `Fundamental_algorithms/` – Implementations of fundamental AI and machine learning algorithms
-- `Week_exercises/` – Weekly exercises, notebooks, code, and notes
-- `Oblig1/` – Mandatory assignment 1
-- `Oblig2/` – Mandatory assignment 2
-- `README.md` – Repository overview and course documentation
+## Topics
 
-## Topics Covered
+The repository currently contains work related to:
 
-Topics covered in this repository may include:
-
-- Artificial Intelligence fundamentals
-- Search algorithms
-- State-space search
-- Greedy search
-- Exhaustive search
-- Optimization
-- Discrete optimization
-- Continuous optimization
-- Travelling Salesman Problem (TSP)
-- Supervised learning
-- Classification
-- k-Nearest Neighbors (KNN)
-- Linear models
-- Decision boundaries
-- Model evaluation
-- Bias and variance
-- Machine learning fundamentals
-
-## Programming and Tools
-
-The exercises are mainly implemented using:
-
-- Python
-- NumPy
-- Matplotlib
-- scikit-learn
-- Jupyter Notebook
-- itertools
+* Search algorithms and state-space search
+* Greedy and exhaustive search
+* Discrete and continuous optimization
+* Travelling Salesman Problem (TSP)
+* Supervised learning
+* k-Nearest Neighbors (KNN)
+* Linear classification
+* Decision boundaries
+* Model evaluation
+* Bias and variance
 
 ## Example: Exhaustive Search
 
-One of the exercises explores exhaustive search for a small Travelling Salesman Problem (TSP).
+One exercise uses exhaustive search to solve a small Travelling Salesman Problem.
 
-The basic idea is to evaluate every possible route and keep track of the shortest one found.
+```python
+for rest in itertools.permutations(range(1, len(cities))):
+    candidate = (0,) + rest
+    length = tour_length(candidate, cities)
 
-    for rest in itertools.permutations(range(1, len(cities))):
-        candidate = (0,) + rest
-        length = tour_length(candidate, cities)
+    if length < best_length:
+        best_length = length
+        best_order = candidate
+```
 
-        if length < best_length:
-            best_length = length
-            best_order = candidate
+For small problems, every possible route can be evaluated directly and the shortest route selected. This also illustrates how quickly exhaustive search becomes expensive as the number of cities increases.
 
-This is a simple example of discrete optimization, where the possible solutions are different permutations of the cities.
+## Machine Learning Exercises
 
-## Classification
+The machine learning part of the course includes classification tasks such as:
 
-The course also introduces supervised learning methods for classification problems, including k-Nearest Neighbors.
+* representing observations with feature vectors
+* computing distances between samples
+* implementing and testing KNN
+* visualizing decision boundaries
+* evaluating classification performance
 
-Typical tasks include:
+## Tools
 
-- Representing data using feature vectors
-- Calculating distances between observations
-- Finding nearest neighbors
-- Predicting class labels
-- Visualizing decision boundaries
-- Evaluating classification performance
+Most of the code is written in Python using:
 
-## Learning Goals
+* NumPy
+* Matplotlib
+* scikit-learn
+* Jupyter Notebook
+* itertools
 
-The main purpose of this repository is to document my progress throughout IN4050 and organize the exercises completed during the semester.
+## About
 
-Through the course and exercises, I aim to develop a better understanding of:
-
-- How search algorithms explore solution spaces
-- How optimization problems are formulated
-- How discrete and continuous optimization differ
-- How machine learning models learn from data
-- How classification algorithms work
-- How mathematical concepts can be implemented in Python
-- How to analyze and evaluate machine learning models
-
-## Notes
-
-This repository is primarily intended for educational purposes.
-
-The code reflects my own learning process during the course. Some implementations may be simplified for educational purposes and may be updated or improved throughout the semester.
-
-
+I use this repository to keep track of my work in IN4050 throughout the semester. The implementations are mainly written for learning and experimentation, so some of them intentionally use simple approaches before moving to more efficient methods.
